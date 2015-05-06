@@ -1,0 +1,31 @@
+{
+  "name": "array-chunk",
+  "version": "0.0.0",
+  "description": "Chunk array on small pieces",
+  "license": "MIT",
+  "repository": "drkraken/array-chunk",
+  "author": {
+    "name": "drKraken",
+    "email": "kuchuklehjs@gmail.com",
+    "url": "drkraken.github.io"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "main" : "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "chunk",
+    "array",
+    "util"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
