@@ -33,3 +33,7 @@ it('should throw error when arguments length > 2', function () {
 it('should support typed arrays', function () {
     assert.deepEqual(arrayChunk(new Uint8Array([1, 2, 3, 4]), 2), [[1, 2], [3, 4]]);
 });
+
+it('should handle bigger chunk size', function () {
+    assert.deepEqual(arrayChunk([1, 2, 3], 5), [[1,2,3]]);
+})
