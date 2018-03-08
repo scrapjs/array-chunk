@@ -38,6 +38,9 @@ Type: `number`
 
 Length of nested array , default 1
 
+## Related
+
+* [flatten-vertex-data](https://github.com/glo-js/flatten-vertex-data) − flattens array data.
 
 ## License
 
