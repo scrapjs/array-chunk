@@ -27,7 +27,7 @@ arrayChunk([1, 2, 3, 4], 2);
 #### arr
 
 *Required*
-Type: `array`
+Type: `array` | [`TypedArray`](https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
 
 Your array
 
@@ -36,7 +36,7 @@ Your array
 *Required*
 Type: `number`
 
-Length of nested array , default 1
+Length of nested array , default `1`
 
 ## Related
 
@@ -44,4 +44,4 @@ Length of nested array , default 1
 
 ## License
 
-MIT © [drKraken](http://drkraken.github.io)
+MIT © [hzlmn](github.com/hzlmn)
