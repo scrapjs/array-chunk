@@ -13,11 +13,11 @@ module.exports = function (arr, size) {
 
 	var chunk = [];
 	for (var i = 0, l = arr.length, group; i < l; i++) {
-		if (!(i % size)) {
-			group = []
-			chunk.push(group)
+		if (i % size == 0) {
+			group = [];
+			chunk.push(group);
 		}
-		group.push(arr[i])
+		group.push(arr[i]);
 	}
 
 	return chunk;
