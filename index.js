@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (arr, size) {
-	if (!Array.isArray(arr)) {
+	if (!Array.isArray(arr) && !ArrayBuffer.isView(arr)) {
 		throw new TypeError('must be an array');
 	}
 
@@ -12,9 +12,12 @@ module.exports = function (arr, size) {
 	size = size || 1;
 
 	var chunk = [];
-
-	while (arr.length > 0) {
-		chunk.push(arr.splice(0, size));
+	for (var i = 0, l = arr.length, group; i < l; i++) {
+		if (!(i % size)) {
+			group = []
+			chunk.push(group)
+		}
+		group.push(arr[i])
 	}
 
 	return chunk;

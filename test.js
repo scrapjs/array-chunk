@@ -29,3 +29,7 @@ it('should throw error when arguments length > 2', function () {
         arrayChunk([1, 2, 3], 2, 3);
     });
 });
+
+it('should support typed arrays', function () {
+    assert.deepEqual(arrayChunk(new Uint8Array([1, 2, 3, 4]), 2), [[1, 2], [3, 4]]);
+});
